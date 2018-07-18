@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="title" content = "Отдых на озере Lago di Garda">
+	<title>Lago di Garda</title>
+	<link rel="stylesheet" href="../css/styles.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/rules.js"></script>
+<script>
+	$(document).ready(function(){
+		if (document.body.clientHeight >= document.body.scrollHeight) {
+		document.getElementById('footer').style.position="absolute";
+	};
+	$('[name=text_xs]').removeClass('item14');
+	$('.burger').click(function(){
+		$('.visibility').show();
+		$('.burger').hide();
+	});
+
+	//$('.item5').hide();
+	$('.part').click(
+		function() {
+			//alert('hgdgdhgdhgdhgd');
+			//alert(document.body.clientWidth);
+			$('.item1, .item2, .item3, .item4, .item8, .item9, .item10, .item11').removeClass("G A R D A2");
+			$('[name=city]').removeClass('text_first');
+			$('[name=city]').addClass('descr_city');
+			
+			if (document.body.clientWidth>'900') {
+				$('.item14').empty();
+				$('[name=text_xs]').removeClass('item14');
+				$('[name=text_xs]').empty();
+				$('.item15').empty();
+				$('.item16').empty();
+				$('.item17').empty();
+				$('.item18').empty();
+			$('.descr_city').html($(this).attr('i1'));
+				if (($(this).attr('i1')=="ГАРДА")||($(this).attr('i1')=="ДЕЗЕНЦАНО")) {
+					$('.item2').html($(this).attr('i2'));
+					$('.item3').html($(this).attr('i3'));
+					$('.item4').html($(this).attr('i4'));
+					$('.item6').html($(this).attr('i6'));
+					$('.item7').html($(this).attr('i7'));
+					$('.item12').html($(this).attr('i12'));
+					$('.item13').html($(this).attr('i13'));
+				} else {
+			$('.item12').empty();
+			$('.item13').empty();
+			//$('.item12').css('z-index', '-1');
+			//$('.item13').css('z-index', '-1');
+			$('.item2').html($(this).attr('i2'));
+			$('.item3').html($(this).attr('i3'));
+			$('.item4').html($(this).attr('i4'));
+			$('.item6').html($(this).attr('i6'));
+			$('.item7').html($(this).attr('i7'));
+			$('.item8').html($(this).attr('i8'));
+			$('.item9').html($(this).attr('i9'));
+			$('.item10').html($(this).attr('i10'));
+			$('.item11').html($(this).attr('i11'));
+			$('.city_photo').fadeIn();
+		};
+	} else {
+		$('[name=text_xs]').addClass('item14');
+		$('.item14, .descr_city').html($(this).attr('i1'));
+				if (($(this).attr('i14')=="ГАРДА")||($(this).attr('i1')=="ДЕЗЕНЦАНО")) {
+					$('.item15').html($(this).attr('i2'));
+					$('.item16').html($(this).attr('i6'));
+					$('.item19').html($(this).attr('i12'));
+				} else {
+			$('.item12').empty();
+			$('.item13').empty();
+			//$('.item12').css('z-index', '-1');
+			//$('.item13').css('z-index', '-1');
+			$('.item15').html($(this).attr('i2'));
+			$('.item16').html($(this).attr('i6'));
+			$('.item17').html($(this).attr('i8'));
+			$('.item18').html($(this).attr('i10'));
+			$('.city_photo').fadeIn();
+		};
+	};
+		});
+});
+</script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-lg-8 col-xs-6">
+					<div class="burger">&#9776</div>
+					<ul class="visibility">
+						<li><a href="../index.html">ГЛАВНАЯ</a></li>
+						<li><a href="#photo">ФОТО</a></li>
+						<li><a href="../index.html #advantages">ПРЕИМУЩЕСТВА</a></li>
+						<li><a href="../index.html">ЗАЯВКА</a></li>
+					</ul>
+				</div>
+					
+				<div id="logo" class="col-lg-4 col-xs-6">
+					<a href="../index.html"><img class="logo_img" src="../images/logo.png" alt="logo"></a>
+				</div>
+			</div>	
+		</div>
+	</header>
+	<div class="wrapper block_photo">
+		<div class="row">
+			<div class="grid-container">
+				<div class="item1 city_photo A2">
+					<p class="text_first" name="city">Пора</p>
+				</div>
+				<div class="item14 city_photo" name="text_xs"><p class="descr_city"></p></div>
+				<div class="item2 city_photo G"><p class="text_first">открыть</p></div>
+				<div class="item3 city_photo A"><p class="text_first">для</p></div>
+				<div class="item4 city_photo R"><p class="text_first">себя</p></div>
+				<div class="item15 city_photo"></div>
+				<div class="item5 map">
+					<svg viewBox="0 0 394.66666 749.33331">
+						<a class="a_part" href="#"><path class="part" d="M 99.911108,343.21316 H 208.14814 l 0.92511,-30.52839 -110.087244,-2.77531 z" i1="ГАРНЬЯНО" i2="<img class='img_size' src='../images/garnano/1.jpg'>" i3="<img class='img_size' src='../images/garnano/4.jpg'>" i4="<img class='img_size' src='../images/garnano/8.jpg'>" i6="<img class='img_size2' src='../images/garnano/6.jpg'>" i7="<img class='img_size2' src='../images/garnano/7.jpg'>" i8="<img class='img_size' src='../images/garnano/10.jpg'>" i9="<img class='img_size' src='../images/garnano/2.jpg'>" i10="<img class='img_size' src='../images/garnano/3.jpg'>" i11="<img class='img_size' src='../images/garnano/9.jpg'>">
+						</path></a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 174.84444,162.8181 h 85.10946 l -0.9251,30.5284 -86.03457,-2.77531 z" i1="ЛИМОНЕ" i2="<img class='img_size' src='../images/limone/9.jpg'>" i3="<img class='img_size' src='../images/limone/11.jpg'>" i4="<img class='img_size' src='../images/limone/6.jpg'>" i6="<img class='img_size2' src='../images/limone/3.jpg'>" i7="<img class='img_size2' src='../images/limone/7.jpg'>" i8="<img class='img_size' src='../images/limone/10.jpg'>" i9="<img class='img_size' src='../images/limone/8.jpg'>" i10="<img class='img_size' src='../images/limone/4.jpg'>" i11="<img class='img_size' src='../images/limone/1.jpg'>">
+						</path></a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 152.64197,442.19916 -0.9251,39.77943 93.43539,-0.92511 -2.77531,-42.55473 z" i1="ТОРРИ ДЕЛЬ БЕНАКО" i2="<img class='img_size' src='../images/torri/1.jpg'>" i3="<img class='img_size' src='../images/torri/8.jpg'>" i4="<img class='img_size' src='../images/torri/10.jpg'>" i6="<img class='img_size2' src='../images/torri/6.jpg'>" i7="<img class='img_size2' src='../images/torri/7.jpg'>" i8="<img class='img_size' src='../images/torri/9.jpg'>" i9="<img class='img_size' src='../images/torri/2.jpg'>" i10="<img class='img_size' src='../images/torri/4.jpg'>" i11="<img class='img_size' src='../images/torri/3.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 216.47407,19.42716 1.8502,24.977777 147.09136,0.925103 -3.70041,-29.603291 z" i1="РИВА ДЕЛЬ ГАРДА" i2="<img class='img_size' src='../images/riva/1.jpg'>" i3="<img class='img_size' src='../images/riva/4.jpg'>" i4="<img class='img_size' src='../images/riva/8.jpg'>" i6="<img class='img_size2' src='../images/riva/6.jpg'>" i7="<img class='img_size2' src='../images/riva/7.JPG'>" i8="<img class='img_size' src='../images/riva/2.jpg'>" i9="<img class='img_size' src='../images/riva/3.jpg'>" i10="<img class='img_size' src='../images/riva/9.JPG'>" i11="<img class='img_size' src='../images/riva/10.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 309.90946,64.7572 0.9251,27.753086 h 81.40905 L 390.39341,64.7572 Z" i1="ТОРБОЛЕ" i2="<img class='img_size' src='../images/torbole/2.jpg'>" i3="<img class='img_size' src='../images/torbole/3.jpg'>" i4="<img class='img_size' src='../images/torbole/4.jpg'>" i6="<img class='img_size2' src='../images/torbole/6.jpg'>" i7="<img class='img_size2' src='../images/torbole/7.jpg'>" i8="<img class='img_size' src='../images/torbole/1.jpg'>" i9="<img class='img_size' src='../images/torbole/8.jpg'>" i10="<img class='img_size' src='../images/torbole/9.jpg'>" i11="<img class='img_size' src='../images/torbole/10.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 277.53086,177.61975 0.9251,33.3037 107.31193,-1.8502 -0.9251,-31.4535 z" i1="МАЛЬЧЕЗИНЕ" i2="<img class='img_size' src='../images/malcesine/1.jpg'>" i3="<img class='img_size' src='../images/malcesine/2.jpg'>" i4="<img class='img_size' src='../images/malcesine/4.jpg'>" i6="<img class='img_size2' src='../images/malcesine/7.jpg'>" i7="<img class='img_size2' src='../images/malcesine/9.jpg'>" i8="<img class='img_size' src='../images/malcesine/10.jpg'>" i9="<img class='img_size' src='../images/malcesine/11.jpg'>" i10="<img class='img_size' src='../images/malcesine/3.jpg'>" i11="<img class='img_size' src='../images/malcesine/8.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 15.726749,434.79834 1.850205,34.22881 93.435386,3.70041 -0.9251,-42.55473 z" i1="ГАРДОНЕ РИВЬЕРА" i2="<img class='img_size' src='../images/gardone/1.jpg'>" i3="<img class='img_size' src='../images/gardone/2.jpg'>" i4="<img class='img_size' src='../images/gardone/8.jpg'>" i6="<img class='img_size2' src='../images/gardone/6.jpg'>" i7="<img class='img_size2' src='../images/gardone/7.jpg'>" i8="<img class='img_size' src='../images/gardone/4.jpg'>" i9="<img class='img_size' src='../images/gardone/10.jpg'>" i10="<img class='img_size' src='../images/gardone/9.jpg'>" i11="<img class='img_size' src='../images/gardone/11.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 0,511.58188 0.92510286,28.67819 61.98189114,0.9251 -1.850206,-26.82798 z" i1="САЛО" i2="<img class='img_size' src='../images/salo/1_1.jpg'>" i3="<img class='img_size' src='../images/salo/2.jpg'>" i4="<img class='img_size' src='../images/salo/3.jpg'>" i6="<img class='img_size2' src='../images/salo/6.jpg'>" i7="<img class='img_size2' src='../images/salo/7.jpg'>" i8="<img class='img_size' src='../images/salo/8.jpg'>" i9="<img class='img_size' src='../images/salo/9.jpg'>" i10="<img class='img_size' src='../images/salo/11.jpg'>" i11="<img class='img_size' src='../images/salo/10.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 178.54485,522.68311 -1.8502,26.82799 h 65.6823 l -2.77531,-28.67819 z" i1="ГАРДА" i2="<img class='img_size' src='../images/garda/1.jpg'>" i3="<img class='img_size' src='../images/garda/2.jpg'>" i4="<img class='img_size' src='../images/garda/3.jpg'>" i6="<img class='img_size2' src='../images/garda/6.jpg'>" i7="<img class='img_size2' src='../images/garda/10.jpg'>" i12="<img class='img_size3' src='../images/garda/7.jpg'>" i13="<img class='img_size3' src='../images/garda/9.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 169.29382,617.96871 0.92511,34.2288 88.80987,1.85021 -0.9251,-33.3037 z" i1="СИРМИОНЕ" i2="<img class='img_size' src='../images/sirmione/1.jpg'>" i3="<img class='img_size' src='../images/sirmione/2.jpg'>" i4="<img class='img_size' src='../images/sirmione/9.jpg'>" i6="<img class='img_size2' src='../images/sirmione/6.jpg'>" i7="<img class='img_size2' src='../images/sirmione/7.jpg'>" i8="<img class='img_size' src='../images/sirmione/4.jpg'>" i9="<img class='img_size' src='../images/sirmione/10.jpg'>" i10="<img class='img_size' src='../images/sirmione/11.jpg'>" i11="<img class='img_size' src='../images/sirmione/8.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 45.33004,671.62467 -1.850206,25.90288 109.162136,1.85021 -0.9251,-28.67819 z" i1="ДЕЗЕНЦАНО" i2="<img class='img_size' src='../images/desenzano/1.JPG'>" i3="<img class='img_size' src='../images/desenzano/2.jpg'>" i4="<img class='img_size' src='../images/desenzano/9.jpg'>" i6="<img class='img_size2' src='../images/desenzano/6.jpg'>" i7="<img class='img_size2' src='../images/desenzano/7.jpg'>" i12="<img class='img_size3' src='../images/desenzano/8.jpg'>" i13="<img class='img_size3' src='../images/desenzano/3.jpg'>">
+						</path>
+						</a>
+						<a class="a_part" href="#">
+						<path class="part" d="m 199.82222,670.69957 0.9251,26.82798 101.76131,0.92511 v -30.5284 z" i1="ПЕСКЬЕРА" i2="<img class='img_size' src='../images/peschiera/1.jpg'>" i3="<img class='img_size' src='../images/peschiera/7.jpg'>" i4="<img class='img_size' src='../images/peschiera/11.jpg'>" i6="<img class='img_size2' src='../images/peschiera/6.jpg'>" i7="<img class='img_size2' src='../images/peschiera/9.jpg'>" i8="<img class='img_size' src='../images/peschiera/2.jpg'>" i9="<img class='img_size' src='../images/peschiera/3.jpg'>" i10="<img class='img_size' src='../images/peschiera/10.jpg'>" i11="<img class='img_size' src='../images/peschiera/8.jpg'>">
+						</path>
+						</a>
+					</svg>
+					<img class="photo_map" src="../images/map.jpg" alt="map">
+				</div>
+				<div class="item6 city_photo"><img class="img_size2" src="../images/peschiera/1.jpg"></div>
+				<div class="item7 city_photo"><img class="img_size2" src="../images/malcesine/7.jpg"></div>
+				<div class="item16 city_photo"></div>
+				<div class="item8 city_photo D"><p class="text_first">удивительный</p></div>
+				<div class="item9 city_photo A2"><p class="text_first">мир</p></div>
+				<div class="item10 city_photo G"><p class="text_first">озера</p></div>
+				<div class="item11 city_photo A"><p class="text_first">Гарда!</p></div>
+				<div class="item12 city_photo"></div>
+				<div class="item13 city_photo"></div>
+				<div class="item17 city_photo"></div>
+				<div class="item18 city_photo"></div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="wrapper" id="footer">
+		<div class="row">
+			
+		</div>
+	</div>
+</body>
+</html>
